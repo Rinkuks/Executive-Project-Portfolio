@@ -69,3 +69,11 @@ footer {
     background: #0b3b6e;
     color: white;
 }
+.portfolio-image {
+    width: 100%;
+    max-width: 850px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
