@@ -161,6 +161,11 @@ footer {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
+.nav-links a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
 }
 /* Project Artifacts */
 
