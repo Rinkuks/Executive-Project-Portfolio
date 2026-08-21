@@ -222,10 +222,17 @@ footer {
     height: 360px;
 
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
 
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: #f8fafc;
+    border-radius: 12px;
+
     overflow: hidden;
+}
 }
 
 .project-cover .portfolio-image {
