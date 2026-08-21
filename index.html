@@ -23,7 +23,7 @@
     <nav class="navbar">
 
     <div class="nav-links">
-       <a href="#" class="active">Home</a>
+      <a href="#">Home</a>
         <a href="artifacts.html">Project Artifacts</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
@@ -192,7 +192,41 @@ Email:
 </p>
 
 </footer>
+<script>
+const navLinks = document.querySelectorAll('.nav-links a');
 
+const sections = [
+    { id: 'skills', link: document.querySelector('.nav-links a[href="#skills"]') },
+    { id: 'about', link: document.querySelector('.nav-links a[href="#about"]') },
+    { id: 'contact', link: document.querySelector('.nav-links a[href="#contact"]') }
+];
+
+function updateActiveNav() {
+    let current = '';
+
+    sections.forEach(section => {
+        const element = document.getElementById(section.id);
+
+        if (element && window.scrollY >= element.offsetTop - 150) {
+            current = section.id;
+        }
+    });
+
+    navLinks.forEach(link => link.classList.remove('active'));
+
+    if (current) {
+        const activeSection = sections.find(section => section.id === current);
+        if (activeSection) {
+            activeSection.link.classList.add('active');
+        }
+    } else {
+        document.querySelector('.nav-links a[href="#"]').classList.add('active');
+    }
+}
+
+window.addEventListener('scroll', updateActiveNav);
+updateActiveNav();
+</script>
 </body>
 
 </html>
