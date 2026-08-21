@@ -309,3 +309,8 @@ footer {
 .project01-phases .artifact-card {
     margin-bottom: 16px;
 }
+
+.artifacts-container > .artifact-phase h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
