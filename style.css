@@ -204,7 +204,8 @@ footer {
     display: grid;
     grid-template-columns: 35% 65%;
     gap: 28px;
-    align-items: center;
+    align-items: stretch;
+}
 }
 
 .project-cover {
@@ -222,12 +223,14 @@ footer {
 .artifact-thumbnails {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 12px;
+}
 }
 
 .artifact-thumbnails img {
     width: 100%;
-    height: 115px;
+    height: 100%;
     object-fit: contain;
     display: block;
     background: #ffffff;
