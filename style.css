@@ -314,3 +314,13 @@ footer {
     font-size: 18px;
     margin-bottom: 10px;
 }
+/* Project 02 - Match Project 01 Typography */
+
+.project02-phases .artifact-phase h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.project02-phases .artifact-card {
+    margin-bottom: 16px;
+}
