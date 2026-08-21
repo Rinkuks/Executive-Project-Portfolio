@@ -198,3 +198,40 @@ footer {
     font-size: 14px;
     padding: 10px 20px;
 }
+/* Featured Project - Cover + Artifact Thumbnails */
+
+.project-visuals {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.project-cover {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-cover .portfolio-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.artifact-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.artifact-thumbnails img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d9e2ef;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
