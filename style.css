@@ -288,3 +288,24 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 }
+/* Project 01 — Horizontal Phase Layout */
+
+.project01-phases {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.project01-phases .artifact-phase {
+    min-width: 0;
+}
+
+.project01-phases .artifact-phase h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.project01-phases .artifact-card {
+    margin-bottom: 16px;
+}
