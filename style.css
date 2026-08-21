@@ -152,7 +152,9 @@ footer {
     text-decoration: none;
     margin-left: 25px;
     font-weight: 600;
+    font-size: 15px;
     transition: 0.3s;
+}
 }
 
 .nav-links a:hover {
