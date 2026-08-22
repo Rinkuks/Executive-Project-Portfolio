@@ -324,3 +324,133 @@ footer {
 .project02-phases .artifact-card {
     margin-bottom: 16px;
 }
+/* =========================================================
+   EXECUTIVE HORIZONTAL PROJECT LAYOUT
+   ========================================================= */
+
+.project01-phases,
+.project02-phases {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  margin-top: 24px;
+  align-items: start;
+}
+
+/* Each phase becomes one clean column */
+.project01-phases .artifact-phase,
+.project02-phases .artifact-phase {
+  min-width: 0;
+  margin: 0;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* Phase heading */
+.project01-phases .artifact-phase h2,
+.project02-phases .artifact-phase h2 {
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 16px 0;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+/* Artifact cards inside each phase */
+.project01-phases .artifact-card,
+.project02-phases .artifact-card {
+  margin: 0 0 14px 0;
+  padding: 0 0 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+  background: transparent;
+}
+
+/* Remove border from final artifact in each phase */
+.project01-phases .artifact-card:last-child,
+.project02-phases .artifact-card:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Artifact title */
+.project01-phases .artifact-card h3,
+.project02-phases .artifact-card h3 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0 0 6px 0;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* Artifact description */
+.project01-phases .artifact-card p,
+.project02-phases .artifact-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+  color: #64748b;
+}
+
+/* Artifact link */
+.project01-phases .artifact-card a,
+.project02-phases .artifact-card a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project01-phases .artifact-card a:hover,
+.project02-phases .artifact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Project title and description */
+.project01-header,
+.project02-header {
+  margin-bottom: 24px;
+}
+
+.project01-header h2,
+.project02-header h2 {
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  color: #1e293b;
+}
+
+.project01-header p,
+.project02-header p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  color: #64748b;
+}
+
+/* Keep the five phases on one row on desktop */
+@media (min-width: 900px) {
+  .project01-phases,
+  .project02-phases {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Tablet */
+@media (max-width: 899px) {
+  .project01-phases,
+  .project02-phases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .project01-phases,
+  .project02-phases {
+    grid-template-columns: 1fr;
+  }
+}
