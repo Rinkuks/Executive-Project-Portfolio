@@ -454,3 +454,10 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* Project 02 header must span the full width */
+.project02-phases > .artifact-phase:first-child {
+  grid-column: 1 / -1;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
