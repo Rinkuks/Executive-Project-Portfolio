@@ -547,3 +547,36 @@ footer {
 .project02-phases .artifact-card a {
     font-size: 13px !important;
 }
+/* ===== FIX PROJECT 02 PAGE WIDTH ===== */
+
+.project02-header,
+.project02-phases {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.project02-phases {
+    overflow: visible;
+}
+
+.project02-phases .artifact-phase,
+.project02-phases .artifact-card {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.project02-phases .artifact-card h3,
+.project02-phases .artifact-card p,
+.project02-phases .artifact-card a {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Prevent the entire webpage from creating a horizontal overflow */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
