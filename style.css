@@ -477,3 +477,73 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
+/* ================================
+   PROJECT 02 — FINAL LAYOUT FIX
+   ================================ */
+
+.project02-header h2 {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+    margin: 0 0 10px 0 !important;
+    color: #1e293b !important;
+}
+
+.project02-header p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    color: #64748b !important;
+}
+
+/* Five phases in one horizontal row */
+.project02-phases {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    align-items: start !important;
+    width: 100% !important;
+}
+
+/* Every phase occupies exactly ONE column */
+.project02-phases .artifact-phase {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
+
+/* Phase headings */
+.project02-phases .artifact-phase h2 {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    margin: 0 0 16px 0 !important;
+    color: #1e293b !important;
+}
+
+/* Artifact cards inside each phase */
+.project02-phases .artifact-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin-bottom: 16px !important;
+}
+
+/* Artifact titles */
+.project02-phases .artifact-card h3 {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 8px 0 !important;
+}
+
+/* Artifact descriptions */
+.project02-phases .artifact-card p {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+/* Links */
+.project02-phases .artifact-card a {
+    font-size: 13px !important;
+}
