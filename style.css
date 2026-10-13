@@ -745,17 +745,21 @@ body {
     margin-bottom: 10px !important;
 }
 
-/* Force Project 02 and 03 main headings to match Project 01 */
 
-.project02-header h2#project02,
+/* Project 02 and 03 titles — match Project 01 */
+
 .project02-header h2,
+.project02-header h2#project02,
 #project02,
 .project03-header h2,
 #project03 h2 {
-    font-family: 'Inter', Arial, Helvetica, sans-serif !important;
-    font-size: 2.8rem !important;
+    font-family: inherit !important;
+    font-size: 26px !important;
     line-height: 1.3 !important;
     font-weight: 700 !important;
-    color: #0b3b6e !important;
-    letter-spacing: -0.5px !important;
+    color: #1e293b !important;
+    letter-spacing: normal !important;
+    margin: 0 0 10px 0 !important;
+}
+
 }
