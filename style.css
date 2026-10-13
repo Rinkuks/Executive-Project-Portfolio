@@ -655,3 +655,52 @@ body {
         grid-template-columns: 1fr;
     }
 }
+```css
+/* Projects 02 and 03 — Match Project 01 typography exactly */
+
+/* Phase headings */
+.project02-phases .artifact-phase h2,
+.project03-phases .artifact-phase h2 {
+    font-family: inherit !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 16px 0 !important;
+    color: #1e3a8a !important;
+    font-weight: 700 !important;
+}
+
+/* Artifact titles */
+.project02-phases .artifact-card h3,
+.project03-phases .artifact-card h3 {
+    font-family: inherit !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    margin: 0 0 6px 0 !important;
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+}
+
+/* Artifact descriptions */
+.project02-phases .artifact-card p,
+.project03-phases .artifact-card p {
+    font-family: inherit !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 8px 0 !important;
+    color: #64748b !important;
+}
+
+/* Artifact links */
+.project02-phases .artifact-card a,
+.project03-phases .artifact-card a {
+    font-family: inherit !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #2563eb !important;
+    text-decoration: none;
+}
+
+.project02-phases .artifact-card a:hover,
+.project03-phases .artifact-card a:hover {
+    text-decoration: underline;
+}
