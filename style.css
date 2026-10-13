@@ -704,3 +704,28 @@ body {
 .project03-phases .artifact-card a:hover {
     text-decoration: underline;
 }
+
+/* Match Project 02 and 03 headings to Project 01 */
+
+/* Project headings */
+.project02-header h2,
+.project03-header h2,
+.project02-header h2#project02 {
+    font-family: inherit !important;
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin: 0 0 10px 0 !important;
+}
+
+/* Phase headings */
+.project02-phases .artifact-phase h2,
+.project03-phases .artifact-phase h2 {
+    font-family: inherit !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    font-weight: 700 !important;
+    color: #1e3a8a !important;
+    margin: 0 0 16px 0 !important;
+}
