@@ -801,7 +801,7 @@ body {
 
 /* Match Project 01 heading and subtitle to Projects 02 and 03 */
 .project01-intro h2 {
-    font-family: 'Inter', Arial, Helvetica, sans-serif !important;
+    font-family:  inherit !important;
     font-size: 26px !important;
     line-height: 1.3 !important;
     font-weight: 700 !important;
